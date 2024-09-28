@@ -16,6 +16,56 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <h1>Hello Guys</h1>
+     <header>
+          <nav class = "navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+               <div class="container-fluid">
+                    <a class="navbar-brand" asp-area="" asp-controller="" asp-action="">Student Information Management</a>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                         <ul class="navbar-nav flex-grow-1">
+                              <li class="nav-item">
+                                   <a class="nav-link" asp-area="" asp-controller="" asp-action="">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" asp-area="" asp-controller="" asp-action="">Us</a>
+                              </li>
+                         </ul>
+                    </div>
+               </div>
+          </nav>
+     </header>
+     <!-- -->
+  <div class="jumbotron text-center">
+     <h1>Hello</h1>
+     <p>I am daven and I am currently learning bootstrap.</p>
+  </div>
+ 
+     <div class="row">
+          <div class="col-md-4">
+               <form asp-action="">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                         <label class="control-label">Full Name</label>
+                         <input asp-for="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                         <label class="control-label">Contact Number</label>
+                         <input asp-for="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                         <label class="control-label">Age</label>
+                         <input asp-for="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                         <label class="control-label">Gender</label>
+                         <input asp-for="" class="form-control">
+                    </div>
+                    <div class="form-group">
+                         <input type="submit" value="Create" class="btn btn-primary">
+                    </div>
+               </form>
+          </div>
+     </div>
+
+  </div>
 </body>
 </html>
